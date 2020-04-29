@@ -1,0 +1,166 @@
+﻿{% load static %}
+<!DOCTYPE html>
+<html class="no-js win firefox firefox75 gecko gecko75" ng-app="edsiteApp" lang="fr"><meta name="viewport" content="width=device-width, initial-scale=1.0"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style> <meta charset="utf-8"> <title>EcoleDirecte</title> <meta content="EcoleDirecte : Bienvenue sur le site internet Ecole Directe. Espace famille, élève, personnel, enseignant ..." name="description"> <meta content="width=device-width,initial-scale=1" name="viewport"> <meta content="IE=edge" http-equiv="X-UA-Compatible"> <meta content="max-age=0" http-equiv="cache-control"> <meta content="no-cache" http-equiv="cache-control"> <meta content="0" http-equiv="expires"> <meta content="Tue, 01 Jan 1980 1:00:00 GMT" http-equiv="expires"> <meta content="no-cache" http-equiv="pragma"> <link href="https://www.ecoledirecte.com/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"> <link href="https://www.ecoledirecte.com/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"> <link href="https://www.ecoledirecte.com/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"> <link href="https://www.ecoledirecte.com/manifest.json" rel="manifest"> <link color="#5bbad5" href="https://www.ecoledirecte.com/safari-pinned-tab.svg" rel="mask-icon"> <meta content="EcoleDirecte" name="apple-mobile-web-app-title"> <meta content="EcoleDirecte" name="application-name"> <meta content="#ffffff" name="theme-color"> <meta content="app-id=1296851886" name="apple-itunes-app"> <!-- base href="https://www.ecoledirecte.com/" --> <!-- Place favicon.ico and apple-touch-icon.png in the root directory --> <link rel="stylesheet" href="{% static "vendor.css" %}> <!--<link rel="stylesheet" href="bower_components/angular.treeview/css/angular.treeview.css">--> <link rel="stylesheet" href="{% static "modules.css" %}"> <!--<link rel="stylesheet" href="bower_components/bootstrap-material-design/dist/css/material.css" /> 
+      <link rel="stylesheet" href="styles/materiel.css"/>
+      <link rel="stylesheet" href="styles/menu-mfb-custom.css"/>
+      <link rel="stylesheet" href="styles/fonts-ed.css">
+      <link rel="stylesheet" href="scripts/directives/input-files/inputfiles.css"/>
+      <link rel="stylesheet" href="modules/emploiDuTemps/emploidutemps.css"/>
+      <link rel="stylesheet" href="modules/cahierDeTextePrimaire/cahierdetextePrimaireSaisie.css"/>
+      <link rel="stylesheet" href="modules/notes/eleve/edit-appreciation-modal.css"/>
+      <link rel="stylesheet" href="modules/notes/saisies-cdt-element-programme.css"/>
+      <link rel="stylesheet" href="modules/dossierInscriptionFamille/recap-dossier-inscription.css"/>
+      <link rel="stylesheet" href="modules/comptesUtilisateur/infos-user.css" />--> <link rel="stylesheet" href="{% static "main.css"%}"> <!--<div ng-if="Auth.role() === 'A'">--> <!--&lt;!&ndash;build:css(.tmp) styles/modules-admin.css--> <!--<link rel="stylesheet" href="styles/main-admin.css"/>&ndash;&gt;--> <!--&lt;!&ndash; endbuild &ndash;&gt;--> <!--</div>--> <!--<div ng-if="Auth.role() === 'P'">--> <!--&lt;!&ndash;build:css(.tmp) styles/modules-profs.css--> <!--<link rel="stylesheet" href="styles/main-profs.css"/>&ndash;&gt;--> <!--&lt;!&ndash; endbuild &ndash;&gt;--> <!--</div>--> <!--<div ng-if="Auth.role() === 'E'">--> <!--&lt;!&ndash;build:css(.tmp) styles/modules-eleves.css--> <!--<link rel="stylesheet" href="styles/main-eleves.css"/>&ndash;&gt;--> <!--&lt;!&ndash; endbuild &ndash;&gt;--> <!--</div>--> <!--<div ng-if="Auth.role() === '1' || Auth.role() === '2'">--> <!--&lt;!&ndash;build:css(.tmp) styles/modules-familles.css--> <!--<link rel="stylesheet" href="styles/main-familles.css"/>&ndash;&gt;--> <!--&lt;!&ndash; endbuild &ndash;&gt;--> <!--</div>--> <link rel="stylesheet" href="{% static "print.css"%}" media="print">  <style id="angular-vs-repeat-style">
+
+
+          input[type=submit] {
+              width: 290px;
+              height: 50px;
+              background-color: #0c91c6;
+              color: white;
+              font-family: Arial, Helvetica, sans-serif;
+              font-size: large;
+              border: 1px solid;
+              border-radius: 4px;
+              border-color: #46b8da;
+          }
+
+          strong {
+              color: white;
+              background-color: #cd1478;
+              border-radius: 4px;
+          }
+    
+    
+    
+    .vs-repeat-debug-element {
+        top: 50%;
+        left: 0;
+        right: 0;
+        height: 1px;
+        background: red;
+        z-index: 99999999;
+        box-shadow: 0 0 20px red;
+      }
+
+      .vs-repeat-debug-element + .vs-repeat-debug-element {
+        display: none;
+      }
+
+      .vs-repeat-before-content,
+      .vs-repeat-after-content {
+        border: none !important;
+        padding: 0 !important;
+      }
+    </style><style>.cke{visibility:hidden;}</style><style type="text/css">.MathJax_Hover_Frame {border-radius: .25em; -webkit-border-radius: .25em; -moz-border-radius: .25em; -khtml-border-radius: .25em; box-shadow: 0px 0px 15px #83A; -webkit-box-shadow: 0px 0px 15px #83A; -moz-box-shadow: 0px 0px 15px #83A; -khtml-box-shadow: 0px 0px 15px #83A; border: 1px solid #A6D ! important; display: inline-block; position: absolute}
+.MathJax_Menu_Button .MathJax_Hover_Arrow {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -khtml-border-radius: 4px; font-family: 'Courier New',Courier; font-size: 9px; color: #F0F0F0}
+.MathJax_Menu_Button .MathJax_Hover_Arrow span {display: block; background-color: #AAA; border: 1px solid; border-radius: 3px; line-height: 0; padding: 4px}
+.MathJax_Hover_Arrow:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_Hover_Arrow:hover span {background-color: #CCC!important}
+</style><style type="text/css">#MathJax_About {position: fixed; left: 50%; width: auto; text-align: center; border: 3px outset; padding: 1em 2em; background-color: #DDDDDD; color: black; cursor: default; font-family: message-box; font-size: 120%; font-style: normal; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -khtml-border-radius: 15px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_About.MathJax_MousePost {outline: none}
+.MathJax_Menu {position: absolute; background-color: white; color: black; width: auto; padding: 2px; border: 1px solid #CCCCCC; margin: 0; cursor: default; font: menu; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_MenuItem {padding: 2px 2em; background: transparent}
+.MathJax_MenuArrow {position: absolute; right: .5em; padding-top: .25em; color: #666666; font-size: .75em}
+.MathJax_MenuActive .MathJax_MenuArrow {color: white}
+.MathJax_MenuArrow.RTL {left: .5em; right: auto}
+.MathJax_MenuCheck {position: absolute; left: .7em}
+.MathJax_MenuCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuRadioCheck {position: absolute; left: 1em}
+.MathJax_MenuRadioCheck.RTL {right: 1em; left: auto}
+.MathJax_MenuLabel {padding: 2px 2em 4px 1.33em; font-style: italic}
+.MathJax_MenuRule {border-top: 1px solid #CCCCCC; margin: 4px 1px 0px}
+.MathJax_MenuDisabled {color: GrayText}
+.MathJax_MenuActive {background-color: Highlight; color: HighlightText}
+.MathJax_MenuDisabled:focus, .MathJax_MenuLabel:focus {background-color: #E8E8E8}
+.MathJax_ContextMenu:focus {outline: none}
+.MathJax_ContextMenu .MathJax_MenuItem:focus {outline: none}
+#MathJax_AboutClose {top: .2em; right: .2em}
+.MathJax_Menu .MathJax_MenuClose {top: -10px; left: -10px}
+.MathJax_MenuClose {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; font-family: 'Courier New',Courier; font-size: 24px; color: #F0F0F0}
+.MathJax_MenuClose span {display: block; background-color: #AAA; border: 1.5px solid; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; line-height: 0; padding: 8px 0 6px}
+.MathJax_MenuClose:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_MenuClose:hover span {background-color: #CCC!important}
+.MathJax_MenuClose:hover:focus {outline: none}
+</style><style type="text/css">.MathJax_Preview .MJXf-math {color: inherit!important}
+</style><style type="text/css">.MJX_Assistive_MathML {position: absolute!important; top: 0; left: 0; clip: rect(1px, 1px, 1px, 1px); padding: 1px 0 0 0!important; border: 0!important; height: 1px!important; width: 1px!important; overflow: hidden!important; display: block!important; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none}
+.MJX_Assistive_MathML.MJX_Assistive_MathML_Block {width: 100%!important}
+</style><style type="text/css">#MathJax_Zoom {position: absolute; background-color: #F0F0F0; overflow: auto; display: block; z-index: 301; padding: .5em; border: 1px solid black; margin: 0; font-weight: normal; font-style: normal; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; box-shadow: 5px 5px 15px #AAAAAA; -webkit-box-shadow: 5px 5px 15px #AAAAAA; -moz-box-shadow: 5px 5px 15px #AAAAAA; -khtml-box-shadow: 5px 5px 15px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_ZoomOverlay {position: absolute; left: 0; top: 0; z-index: 300; display: inline-block; width: 100%; height: 100%; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+#MathJax_ZoomFrame {position: relative; display: inline-block; height: 0; width: 0}
+#MathJax_ZoomEventTrap {position: absolute; left: 0; top: 0; z-index: 302; display: inline-block; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+</style><style type="text/css">.MathJax_Preview {color: #888; display: contents}
+#MathJax_Message {position: fixed; left: 1px; bottom: 2px; background-color: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}
+#MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px}
+.MathJax_Error {color: #CC0000; font-style: italic}
+</style><style type="text/css">.MJXp-script {font-size: .8em}
+.MJXp-right {-webkit-transform-origin: right; -moz-transform-origin: right; -ms-transform-origin: right; -o-transform-origin: right; transform-origin: right}
+.MJXp-bold {font-weight: bold}
+.MJXp-italic {font-style: italic}
+.MJXp-scr {font-family: MathJax_Script,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-frak {font-family: MathJax_Fraktur,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-sf {font-family: MathJax_SansSerif,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-cal {font-family: MathJax_Caligraphic,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-mono {font-family: MathJax_Typewriter,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-largeop {font-size: 150%}
+.MJXp-largeop.MJXp-int {vertical-align: -.2em}
+.MJXp-math {display: inline-block; line-height: 1.2; text-indent: 0; font-family: 'Times New Roman',Times,STIXGeneral,serif; white-space: nowrap; border-collapse: collapse}
+.MJXp-display {display: block; text-align: center; margin: 1em 0}
+.MJXp-math span {display: inline-block}
+.MJXp-box {display: block!important; text-align: center}
+.MJXp-box:after {content: " "}
+.MJXp-rule {display: block!important; margin-top: .1em}
+.MJXp-char {display: block!important}
+.MJXp-mo {margin: 0 .15em}
+.MJXp-mfrac {margin: 0 .125em; vertical-align: .25em}
+.MJXp-denom {display: inline-table!important; width: 100%}
+.MJXp-denom > * {display: table-row!important}
+.MJXp-surd {vertical-align: top}
+.MJXp-surd > * {display: block!important}
+.MJXp-script-box > *  {display: table!important; height: 50%}
+.MJXp-script-box > * > * {display: table-cell!important; vertical-align: top}
+.MJXp-script-box > *:last-child > * {vertical-align: bottom}
+.MJXp-script-box > * > * > * {display: block!important}
+.MJXp-mphantom {visibility: hidden}
+.MJXp-munderover, .MJXp-munder {display: inline-table!important}
+.MJXp-over {display: inline-block!important; text-align: center}
+.MJXp-over > * {display: block!important}
+.MJXp-munderover > *, .MJXp-munder > * {display: table-row!important}
+.MJXp-mtable {vertical-align: .25em; margin: 0 .125em}
+.MJXp-mtable > * {display: inline-table!important; vertical-align: middle}
+.MJXp-mtr {display: table-row!important}
+.MJXp-mtd {display: table-cell!important; text-align: center; padding: .5em 0 0 .5em}
+.MJXp-mtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-mlabeledtr {display: table-row!important}
+.MJXp-mlabeledtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mlabeledtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 1px 3px; font-style: normal; font-size: 90%}
+.MJXp-scale0 {-webkit-transform: scaleX(.0); -moz-transform: scaleX(.0); -ms-transform: scaleX(.0); -o-transform: scaleX(.0); transform: scaleX(.0)}
+.MJXp-scale1 {-webkit-transform: scaleX(.1); -moz-transform: scaleX(.1); -ms-transform: scaleX(.1); -o-transform: scaleX(.1); transform: scaleX(.1)}
+.MJXp-scale2 {-webkit-transform: scaleX(.2); -moz-transform: scaleX(.2); -ms-transform: scaleX(.2); -o-transform: scaleX(.2); transform: scaleX(.2)}
+.MJXp-scale3 {-webkit-transform: scaleX(.3); -moz-transform: scaleX(.3); -ms-transform: scaleX(.3); -o-transform: scaleX(.3); transform: scaleX(.3)}
+.MJXp-scale4 {-webkit-transform: scaleX(.4); -moz-transform: scaleX(.4); -ms-transform: scaleX(.4); -o-transform: scaleX(.4); transform: scaleX(.4)}
+.MJXp-scale5 {-webkit-transform: scaleX(.5); -moz-transform: scaleX(.5); -ms-transform: scaleX(.5); -o-transform: scaleX(.5); transform: scaleX(.5)}
+.MJXp-scale6 {-webkit-transform: scaleX(.6); -moz-transform: scaleX(.6); -ms-transform: scaleX(.6); -o-transform: scaleX(.6); transform: scaleX(.6)}
+.MJXp-scale7 {-webkit-transform: scaleX(.7); -moz-transform: scaleX(.7); -ms-transform: scaleX(.7); -o-transform: scaleX(.7); transform: scaleX(.7)}
+.MJXp-scale8 {-webkit-transform: scaleX(.8); -moz-transform: scaleX(.8); -ms-transform: scaleX(.8); -o-transform: scaleX(.8); transform: scaleX(.8)}
+.MJXp-scale9 {-webkit-transform: scaleX(.9); -moz-transform: scaleX(.9); -ms-transform: scaleX(.9); -o-transform: scaleX(.9); transform: scaleX(.9)}
+.MathJax_PHTML .noError {vertical-align: ; font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid}
+</style></head><body ng-class="{'body-auth': Auth.isAuthenticated()}"><div id="MathJax_Message" style="display: none;"></div> <!--<session></session>--> <!-- ngIf: !Auth --> <!--<div id="info-landscape" class="hidden-print" ng-if="isMobile() && Auth.isAuthenticated()">--> <!--<i class="fa fa-mobile fa-4x"></i>--> <!--<br/>--> <!--<i class="fa fa-arrow-down"></i>--> <!--<br/>--> <!--<i class="fa fa-mobile fa-rotate-90 fa-4x"></i>--> <!--<br/>--> <!--<span>Positionnez votre téléphone <br/> en mode paysage</span>--> <!--</div>--> <div cg-busy="mainPromise" class="container-principal" style="position: relative;"> <!--<div id="header-part" ng-include src="'modules/commun/header.html'"
+           ng-if="Auth.isAuthenticated()"></div>
+      <div id="main-part" ng-class="{'col-md-12':!Auth.isMenuVertical(), 'col-md-11':Auth.isMenuVertical()}"
+           ng-view=""></div>--> <!-- # Menu principal--> <!-- ngIf: Auth.isAuthenticated() --> <!--# Contenu du site--> <div id="main-part" ng-class="{'page-accueil': isHomePage()}"> <!-- ngIf: Auth.isAuthenticated() --> <!-- ngView:  --><div id="main" ng-view=""><div class="container-fluid no-padding" id="login"> <div class="col-lg-4 col-md-5 login-container"> <header class="text-center"> <img src="{% static "logoEcoleDirecte.png" %}" alt="EcoleDirecte"> <h1><font face="Helvetica Neue,Helvetica,Arial,sans-serif"><center>EcoleDirecte</center></font></h1> </header>{% if error_message %}<p><font face="Helvetica Neue,Helvetica,Arial,sans-serif"><strong>{{ error_message }}</strong></font></p>{% endif %} <!-- ngIf: errorMessage --> <div class="form-box ng-hide" id="site-closed" ng-show="siteClosed"> <h3 id="outputbis" class="animated fadeInUp alert alert-danger">Ce site est <br> actuellement fermé</h3> <br> <p class="help-block"> Vous ne pouvez pas vous connecter pour le moment. <br>Contactez votre établissement pour plus d'informations. </p> </div> <div class="form-box ng-hide" ng-show="!siteClosed &amp;&amp; redirEnCours"> <h2>Redirection en cours</h2> <br> <i class="fa fa-spinner fa-pulse"></i> <br> <br> <br> <br> <br> <br> <br> <br> </div> <div class="form-box" id="bloc-connexion" ng-show="!siteClosed &amp;&amp; !redirEnCours"> <h2 class="text-center"><font face="Helvetica Neue,Helvetica,Arial,sans-serif">Connectez-vous</font></h2> <form method="get" action="{% url 'po' %}"> <input id="username" type="text" name="post" class="input-block-level log ng-valid ng-touched ng-dirty ng-valid-parse" placeholder="Identifiant" autofocus=""> <span class="btn btn-simple btn-default pull-right" id="show-password" ng-click="showPassword()"><i class="fa fa-eye"></i></span> <input id="password" class="log ng-valid ng-dirty ng-valid-parse ng-touched" name="mdp" placeholder="Mot de passe" type="password"> <a href="https://www.ecoledirecte.com/recuplogin" class="mdp-lost"><font face="arial">Mot de passe oublié ?</font></a> <div class="clearfix"></div> <input type="submit" value="Connexion" class="bouton_submit"> <br /><br /> <div class="checkbox text-center text-bold"> <label> <input type="checkbox" ng-model="loginStored" class="ng-valid ng-dirty ng-valid-parse ng-touched"><span class="ripple"></span><span class="check"></span> </label>  <span class="label-checkbox"><font face="arial">Se souvenir de moi</font></span> </div> <br /> <div class="cg-busy cg-busy-backdrop cg-busy-backdrop-animation ng-hide" ng-show="$cgBusyIsActive()"></div><div class="cg-busy cg-busy-animation ng-hide" ng-show="$cgBusyIsActive()"><div class="spinner" style="position: absolute; inset: 0px;"> <div class="bounce1"></div> <div class="bounce2"></div> <div class="bounce3"></div> </div></div></form> </div> <div id="item-mentions"><a href="#" ng-click="openModalMentionsLegales()"><font face="arial"> Mentions légales</font></a></div> <span class="pull-left version-site">v. 3.6.1-66 - https://api.ecoledirecte.com/v3/</span> </div> <div class="col-lg-8 col-md-7 info-container"> <div class="autopromo"> <p><span><font face="arial">Retrouvez EcoleDirecte aussi sur votre mobile</font></span> </p><ul class="list-inline"> <li><a href="https://play.google.com/store/apps/developer?id=STATIM+Progiciels" target="_blank"> <img alt="Get it on Google Play" src="{% static "play-store.png" %}"> </a></li> <li><a href="https://itunes.apple.com/fr/developer/statim/id466797731" target="_blank"> <img alt="Get it on AppStore" src="{% static "appstore.png"%}"> </a></li> </ul> <p></p></div> </div> <!--<div class="row text-center">
+    <div class="col-md-12">
+      <br/>
+      <br/>
+      <p><a href="http://www.statim.fr"><img src="/images/LogoCharlemagne.b8fa6753.png" alt="Charlemagne"/></a></p>
+      <p>Logiciel de gestion d'établissement scolaire</p>
+    </div>
+  </div>--> <!--<div class="row">--> <!--<div class="col-md-12 text-center">--> <!--<br/>--> <!--<a href="https://docs.ecoledirecte.com/Doc_ED_Familles.pdf"><i class="fa fa-question-circle"></i> Consulter la documentation</a>--> <!--</div>--> <!--</div>--> </div> <!--<div ng-if="!isCNILOK()" ng-click="storeCNILCookie()"--> <!--style="background-color:#4e4e52;color:white;cursor:pointer;position:fixed;bottom: 0;z-index:5;width: 95%;text-align: center">--> <!--En continuant à naviguer sur ce site, vous acceptez l'utilisation des cookies afin de réaliser des statistiques--> <!--d'audiences. Pour en savoir plus, consultez les informations légales du site après connexion. <a--> <!--href ng-click="storeCNILCookie()">Fermer</a></div>--></div> <!-- ngIf: Auth.isAuthenticated() --> </div> <div class="cg-busy cg-busy-backdrop cg-busy-backdrop-animation ng-hide" ng-show="$cgBusyIsActive()"></div><div class="cg-busy cg-busy-animation ng-hide" ng-show="$cgBusyIsActive()"><div class="spinner" style="position: absolute; inset: 0px;">  <div class="bounce1"></div> <div class="bounce2"></div> <div class="bounce3"></div> </div></div></div> <!--<div class="clearfix"></div>
+    <div id="footer-part" ng-include src="'modules/commun/footer.html'"></div>--> <script src="vendor.js"></script> <script src="vendorext.js"></script> <script src="ckeditor.js"></script> <script src="MathJax.js"></script> <script src="jitsi-meet-external-api.js"></script> <script src="scripts.js"></script> <script>if (window.location.href.indexOf('http://www.ecoledirecte.com') > -1) {
+        location.href = location.href.replace("http://", "https://");
+      }
+
+      cssVars();</script> <ngp-piwik ngp-set-js-url="//piwik.ecoledirecte.com/piwik.js" ngp-set-site-id="1" ngp-set-tracker-url="//piwik.ecoledirecte.com/piwik.php"></ngp-piwik>  <script src="piwik.js"></script></body></html>
